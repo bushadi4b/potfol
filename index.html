@@ -1,0 +1,680 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Mohamed Nabil - Portfolio </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="29648fbd-073c-471a-beab-79e68c22caa4" class="page sans"><header><h1 class="page-title">Mohamed Nabil - Portfolio </h1><p class="page-description"></p></header><div class="page-body"><div id="e3fccf71-5865-4689-b0ca-b190d41860cc" class="column-list"><div id="9b2711ce-d337-47b8-938b-4bc6a227bcfc" style="width:25%" class="column"><figure id="7e08cedf-356e-4f4f-9601-9c113aa48ba8" class="image"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/a0f8ca323b386223137e2b951d3f95af.jpg"><img style="width:120px" src="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/a0f8ca323b386223137e2b951d3f95af.jpg"/></a></figure></div><div id="eb7ac767-8ba8-47d1-9e64-34ee7c426078" style="width:75%" class="column"><p id="91b76250-e514-4153-9dd6-3f894fdce5e6" class="">How to Contact Me :</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="ecaa2d80-10bd-4731-962f-7b513701378c"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/mail_gray.svg"/></div><div style="width:100%">mohmednabil9524@gmail.com</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2eb7a04d-6869-4382-82b5-e8f65f5db23c"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/conversation_gray.svg"/></div><div style="width:100%">(+20)1061127053</div></figure><p id="615f6aea-d101-4cae-b348-00fe3183c126" class="">
+</p></div></div><h1 id="0c763fa6-cd23-4abe-a483-908e34cdecfc" class="">About me</h1><p id="973a5abe-7065-4d04-9853-6ba4be02d63f" class="">I have a strong interest in graphic design and a solid foundation in using Canva to create visually captivating content. I am also adept at data entry in Excel and Word, with a knack for managing and organizing information effectively. My strong communication, organizational, and time management skills further position me as a valuable virtual assistant. I am always keen to learn new skills and continuously enhance my abilities.</p><p id="fc5b8366-ac59-4e1d-a1c3-b8e729f6baa9" class="">
+</p><hr id="2e78a681-e402-46a4-9bed-4a447822fc69"/><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0"><span style="border-bottom:0.05em solid">Project_1</span></summary><div class="indented"><figure id="fb89dbe5-9c60-4d55-9ebc-acd2f9a6c309"><div class="block-color-teal source"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Billionaires_Dataset_Raw.xlsx">Billionaires Dataset_Raw.xlsx</a></div></figure><figure id="4757d896-df2f-47e8-81fc-2eeafdd16496"><div class="block-color-teal source"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Billionaires_Dataset_Analysis.xlsx">Billionaires Dataset_Analysis.xlsx</a></div></figure><figure id="d0a11d26-f117-4072-b732-d44e842b679d" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Cleaning%20and%20Visualizing%20Video%20d0a11d26f1174072b732d44e842b679d.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Cleaning and Visualizing Video</a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0"><span style="border-bottom:0.05em solid">Project_2</span></summary><div class="indented"><figure id="f3af6a3b-b3d5-4e00-bb87-7de01556392a"><div class="block-color-teal source"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Sales_Dataset_Raw.xlsx">Sales Dataset_Raw.xlsx</a></div></figure><figure id="41f51e06-d0dc-45b6-af91-a38fe34658bc"><div class="block-color-teal source"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Sales_Dataset_Analysis.xlsx">Sales Dataset_Analysis.xlsx</a></div></figure><figure id="a76f0ad9-8aa1-48c3-a956-bc4b07202d22" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Data%20Visualization%20Video%20a76f0ad98aa148c3a956bc4b07202d22.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Data Visualization Video</a></figure><ul id="35969a5c-ae2b-4b9e-97f2-52e8d3683163" class="toggle"><li><details open=""><summary>Data Cleaning</summary><ul id="2297ba4e-7004-44c5-885f-fd62beac9f81" class="toggle"><li><details open=""><summary>General Formatting</summary><figure id="76843e92-ec9e-4377-b501-aec84efa51e7" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Clear%20Format%20Video%2076843e92ec9e4377b501aec84efa51e7.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Clear Format Video</a></figure><figure id="e629e42b-9156-40d4-b90e-ecbc2d417753" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Find%20&amp;%20Select%20Video%20e629e42b915640d4b90eecbc2d417753.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Find &amp; Select Video</a></figure><figure id="a640b668-12fd-410f-a814-a5d40bd99d9a" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Remove%20Dublicates%20Video%20a640b66812fd410fa814a5d40bd99d9a.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Remove Dublicates Video</a></figure><figure id="063580e5-1745-4df6-9d39-ecdb7d3a41c6" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Remove%20Empty%20Rows%20Video%20063580e517454df69d39ecdb7d3a41c6.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Remove Empty Rows Video</a></figure></details></li></ul><ul id="7b3bc171-5654-47db-8615-496121798fc8" class="toggle"><li><details open=""><summary>Number Formatting</summary><figure id="94eb072c-d92f-4baa-bfe7-572dd59a50bc" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Number%20Formating%20Video%2094eb072cd92f4baabfe7572dd59a50bc.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Number Formating Video</a></figure></details></li></ul><ul id="d9f2f560-5efb-46f5-b33f-1c3988161873" class="toggle"><li><details open=""><summary>Text Formatting</summary><figure id="86d2a67b-d7b8-4c8d-92bf-7f2d91cf1fde" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Case%20Formating%20Video%2086d2a67bd7b84c8d92bf7f2d91cf1fde.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Case Formating Video</a></figure><figure id="53cd7302-1685-49d3-aed8-f14f60be6ba1" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Trim%20Video%2053cd7302168549d3aed8f14f60be6ba1.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Trim Video</a></figure></details></li></ul></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Excel Track</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Module_0 ( Introduction )</summary><div class="indented"><ul id="25230814-7206-4619-b2c6-59615d87f135" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">Auto fill &amp; Flash fill</mark></strong></summary><figure id="53302404-409d-45e3-a083-32b68fd46180" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Autofill%20&amp;%20Flashfill%20Video%2053302404409d45e3a08332b68fd46180.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Autofill &amp; Flashfill Video</a></figure><figure id="68d3e745-3b71-46b9-af95-a8985c7c81d2" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Advanced%20Fill%20Series%20Video%2068d3e7453b7146b9af95a8985c7c81d2.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Advanced Fill Series Video</a></figure></details></li></ul><ul id="2feeee7a-d1cb-406d-a9f1-630c90039d70" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">References</mark></strong></summary><figure id="0b3142b9-6f06-4817-bdef-289d8015a23e" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Absolute%20Reference%20&amp;%20Relative%20Reference%20Video%200b3142b96f064817bdef289d8015a23e.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Absolute Reference &amp; Relative Reference Video</a></figure></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Module_1 ( Data Preparation )</summary><div class="indented"><ul id="06fcaa12-ca7b-41e8-9756-81e08eb706d3" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">Data Filtering</mark></strong></summary><ul id="4bb6950c-4bcd-4e55-8052-f27a3b7ec495" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Find &amp; Select</mark></em></summary><figure id="23759cbd-9dc6-4ce6-bbb9-bd5c48398ee7" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Find%20&amp;%20Select%20Video%2023759cbd9dc64ce6bbb9bd5c48398ee7.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Find &amp; Select Video</a></figure></details></li></ul><ul id="09f8c029-c7bd-40fa-9dfc-4f5e77c5a6d5" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Isolate</mark></em></summary><figure id="4f9b5d33-d599-4e65-97f4-fc47d5110630" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Filters%20Video%204f9b5d33d5994e6597f4fc47d5110630.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Filters Video</a></figure><figure id="7ac819e8-275e-4679-ab69-63d024cb96e0" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Groups%20Video%207ac819e8275e4679ab6963d024cb96e0.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Groups Video</a></figure></details></li></ul><ul id="798ad939-bf4d-4309-b4a0-679c7b621c86" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Remove</mark></em></summary><figure id="17346419-0863-4d74-80ef-b178224dc1c9" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Remove%20Empty%20Rows%20Video%201734641908634d7480efb178224dc1c9.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Remove Empty Rows Video</a></figure><figure id="d26c4349-26a5-4b92-87e5-5ecb9500e9f9" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Remove%20Dublicates%20Video%20d26c434926a54b9287e55ecb9500e9f9.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Remove Dublicates Video</a></figure></details></li></ul></details></li></ul><ul id="d32eb0a7-268c-4206-b48b-08e7ae5987c8" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">Data Formatting</mark></strong></summary><ul id="31fd6ef8-be25-41d9-9ba9-7b677083f78a" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Clear Formatting</mark></em></summary><figure id="fef728f1-a443-402b-afc3-1b72e96a26c5" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Clear%20Format%20Video%20fef728f1a443402bafc31b72e96a26c5.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Clear Format Video</a></figure></details></li></ul><ul id="31654c0d-ab99-45b3-ad6c-8b993a4ccedc" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Conditional Formatting</mark></em></summary><figure id="c9c43814-add9-4228-a029-7fc77413706d" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Data%20Validation%20Video%20c9c43814add94228a0297fc77413706d.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Data Validation Video</a></figure></details></li></ul><ul id="7530b23d-7fba-4ddd-97c5-193b20801319" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Non Conditional Formatting</em></mark></summary><ul id="7b0cd3e1-9997-4134-ab6f-683d70bcd65d" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Number Formatting</mark></em></summary><figure id="11b490e7-fc18-4cc0-b742-cc1c905d271a" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Number%20Formatting%20video%2011b490e7fc184cc0b742cc1c905d271a.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Number Formatting video</a></figure></details></li></ul><ul id="f84c4d1d-e45c-4f3c-96f5-3d157f4e5c32" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Text Formatting</mark></em></summary><figure id="4ce9ed7e-180e-472e-be90-1f49a1079aec" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Case%20Formatting%20Video%204ce9ed7e180e472ebe901f49a1079aec.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Case Formatting Video</a></figure><figure id="52cdc868-2a51-4730-8866-8bbe15c158b0" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Concat%20Video%2052cdc8682a51473088668bbe15c158b0.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Concat Video</a></figure><figure id="57b6be71-005d-4dd5-b822-f15a32af5754" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Split%20Text%20to%20Columns%20Video%2057b6be71005d4dd5b822f15a32af5754.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Split Text to Columns Video</a></figure><figure id="c22868f2-cd40-495c-a6ab-82ae4095b55f" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Trim%20Video%20c22868f2cd40495ca6ab82ae4095b55f.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Trim Video</a></figure></details></li></ul></details></li></ul></details></li></ul><ul id="2d9458ba-989d-4095-bf8b-4d5a99c09a7d" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">Data Sorting</mark></strong></summary><figure id="811183cb-4271-466b-b73d-d91c5efc443d" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Data%20Sorting%20Video%20811183cb4271466bb73dd91c5efc443d.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Data Sorting Video</a></figure></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Module_2 ( Data Summarization )</summary><div class="indented"><ul id="fb6381bf-1f0b-431f-93fe-23f5f9d8ee78" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">Functions</mark></strong></summary><ul id="7166bc82-a221-4ce8-b79e-8b08579659e8" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Conditional Functions</em></mark></summary><figure id="c222d03f-fac9-4a4c-aad1-abfc794db440" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/IF%20Function%20Video%20c222d03ffac94a4caad1abfc794db440.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>IF Function Video</a></figure><figure id="d69cb904-709d-47af-bb4f-b2e5149cfc03" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/NestedIF%20Video%20d69cb904709d47afbb4fb2e5149cfc03.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>NestedIF Video</a></figure><figure id="7d90df95-c8e7-4a7f-8ac3-f2063ca9d9a6" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Sumif%20Video%207d90df95c8e74a7f8ac3f2063ca9d9a6.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Sumif  Video</a></figure><figure id="d1cbe31c-5b3a-4eac-964f-fd061018514f" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/AverageIF%20Video%20d1cbe31c5b3a4eac964ffd061018514f.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>AverageIF Video</a></figure><figure id="93d073cf-1399-4e26-8cb2-f34f704da710" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/CountIF%20Video%2093d073cf13994e268cb2f34f704da710.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>CountIF Video</a></figure><figure id="45e4e5bd-f9a4-471d-ae17-ed93b818421c" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/SumIFs%20Video%2045e4e5bdf9a4471dae17ed93b818421c.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>SumIFs Video</a></figure><figure id="b0b78a7d-6108-4a77-9a7f-f2bdb11bf99f" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/AverageIFs%20Video%20b0b78a7d61084a779a7ff2bdb11bf99f.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>AverageIFs Video</a></figure><figure id="551140e5-740d-46c8-9a55-eb74d36f5196" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/CountIFs%20Video%20551140e5740d46c89a55eb74d36f5196.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>CountIFs Video</a></figure></details></li></ul><ul id="6b7b64e2-2032-42aa-a0ca-88026ebd0f16" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Logical Functions</em></mark></summary><figure id="354614c2-0885-4d20-b23c-ecb80092ef50" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Sum,%20Avg,Count%20Min,%20Max%20Video%20354614c208854d20b23cecb80092ef50.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Sum, Avg,Count Min, Max Video</a></figure></details></li></ul><ul id="e6f6cfbd-29cb-4972-9964-706f8d2f7ce5" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Reference Functions</mark></em></summary><figure id="4a7d2585-486b-4957-914c-bb3a50f96bb2" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Vlookup%20Video%204a7d2585486b4957914cbb3a50f96bb2.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Vlookup Video</a></figure><figure id="96ab62ed-1d5e-4c30-8ec0-d08629bf4f15" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Hlookup%20Video%2096ab62ed1d5e4c308ec0d08629bf4f15.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Hlookup Video</a></figure><figure id="0054e5b6-c222-474d-b072-1fb9c65e19ff" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Xlookup%20Video%200054e5b6c222474db0721fb9c65e19ff.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Xlookup Video</a></figure></details></li></ul></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Module_3 ( Data Analysis )</summary><div class="indented"><ul id="2eb0e505-8821-4d5e-b796-76d11a342933" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">Data Preparation In Pivot Table</mark></strong></summary><ul id="f9697598-8f49-4b97-83d5-124b712c1816" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Data Filtering in Pivot Tables</em></mark></summary><ul id="45603a70-879e-4ac7-a1f3-d8141a641bf2" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Filters</em></mark></summary><figure id="566036e2-566d-4350-9621-36f4f1dcd7a8" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Filtering%20In%20Pivot%20Table%20Video%20566036e2566d4350962136f4f1dcd7a8.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Filtering In Pivot Table Video</a></figure></details></li></ul><ul id="9ea325c5-9cb5-41c2-bf54-168c5242bed1" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Groups</em></mark></summary><figure id="196ae0d2-73db-41f2-8a09-131dd3c6365c" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Grouping%20in%20Pivot%20Table%20Video%20196ae0d273db41f28a09131dd3c6365c.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Grouping in Pivot Table Video</a></figure></details></li></ul></details></li></ul><ul id="793cc15b-a94d-44dc-8805-c8d82381898b" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Data Formatting in Pivot Tables</em></mark></summary><figure id="f25db145-ea1d-40b1-bca0-039031de65c3" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Formatting%20In%20pivot%20Tables%20Video%20f25db145ea1d40b1bca0039031de65c3.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Formatting In pivot Tables Video</a></figure></details></li></ul><ul id="678b1a5b-929b-49de-a2cf-a803175596f5" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em>Data Sorting in Pivot Tables</em></mark></summary><figure id="ae5107e7-c299-4f1e-90f1-7f25edf17854" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Sorting%20in%20Pivot%20Table%20Video%20ae5107e7c2994f1e90f17f25edf17854.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Sorting in Pivot Table Video</a></figure></details></li></ul><ul id="d092710a-cce0-4980-a555-2b697e802a0c" class="toggle"><li><details open=""><summary><em><mark class="highlight-gray">Refreshing &amp; Updating in Pivot Tables</mark></em></summary><figure id="92afef94-3fd1-4e43-ac87-d9dd0bdb5ade" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Refreshing%20&amp;%20Updating%20Pivot%20Tables%20Video%2092afef943fd14e43ac87d9dd0bdb5ade.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Refreshing &amp; Updating Pivot Tables Video</a></figure></details></li></ul></details></li></ul><ul id="449e8000-ab7e-4e46-8960-78c7b650d87e" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><strong>data Summarization in pivot table</strong></mark></summary><figure id="dd3f494f-612a-4bb0-8911-fb574b3ae76b" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Summerize%20Data%20In%20Pivot%20Table%20Video%20dd3f494f612a4bb08911fb574b3ae76b.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Summerize Data In Pivot Table Video</a></figure></details></li></ul><ul id="121c866f-83c0-46a4-9788-a2f22a99e08a" class="toggle"><li><details open=""><summary><strong><mark class="highlight-gray">Data Visualization in pivot table</mark></strong></summary><figure id="4c90b6e7-ed9a-441d-be72-2f02a78a4930" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Data%20Visualization%20Video%204c90b6e7ed9a441dbe722f02a78a4930.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Data Visualization Video</a></figure></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Module_4 ( Saving Progress )</summary><div class="indented"><ul id="2bb24025-87fc-4bb6-9f69-e2e5d5173871" class="toggle"><li><details open=""><summary><mark class="highlight-gray">Protection &amp; Encryption</mark></summary><figure id="7b17bd29-c703-465a-a169-ea15660306f7" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Protection%20&amp;%20Encryption%207b17bd29c703465aa169ea15660306f7.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Protection &amp; Encryption</a></figure></details></li></ul><ul id="443c017a-2146-4fdb-9e3e-a410b0e8c4eb" class="toggle"><li><details open=""><summary><mark class="highlight-gray">Macros</mark></summary><figure id="12b198cf-85a9-4629-b7c3-0cf9be1cdd49" class="block-color-blue link-to-page"><a href="Mohamed%20Nabil%20-%20Portfolio%2029648fbd073c471abeab79e68c22caa4/Macros%20Video%2012b198cf85a94629b7c30cf9be1cdd49.html"><img class="icon" src="https://www.notion.so/icons/playback-play-button_blue.svg"/>Macros Video</a></figure></details></li></ul><p id="2aa31fd6-6b19-4cb8-8393-3a49689d1b13" class="">
+</p></div></details></div></details></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
